@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%; /* Ensure the body and html elements take full height */
+  overflow: auto; /* Enable scrolling on the page */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  justify-content: flex-start;
+  background-color: aliceblue;
+  padding-top: 0;
+  padding-bottom: 100px; /* Provide space at the bottom for the footer */
+}
+
+.navbar {
+  background: rgb(3, 115, 132);
+  padding: 0px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px;
+}
+
+.logo {
+  height: 50px;
+}
+
+#user {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.user-avatar {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: #007bff;
+  overflow: hidden;
+}
+
+.user-name {
+  margin-left: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 15px;
+}
+
+.swiper-container {
+  width: 100vw; /* Set swiper container to 100% viewport width */
+  height: 100vh; /* Set swiper container to 100% viewport height */
+  position: relative;
+}
+
+.swiper-wrapper {
+  display: flex;
+  height: 100%; /* Ensure the wrapper takes full height */
+}
+
+.swiper-slide {
+  width: 100%; /* Each slide takes 100% of the width */
+  height: 100%; /* Each slide takes 100% of the height */
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  width: 100%; /* Ensure image takes 100% of the slide width */
+  height: 100%; /* Ensure image takes 100% of the slide height */
+  object-fit: cover; /* Ensures the image covers the entire slide area without distortion */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: transparent;
+}
+
+/* Footer Styles */
+footer {
+  padding: 20px;
+  background-color: white;
+  font-size: 14px;
+  color: black;
+  border-top: 1px solid #ddd;
+  position: relative;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;       /* Stack items vertically */
+  align-items: center;          /* Center everything horizontally */
+  width: 100%;
+}
+
+.footer-logo img {
+  height: 130px;                /* Adjust logo size */
+  display: block;               /* Ensure logo is displayed as a block element */
+  margin-bottom: 20px;          /* Add space below the logo */
+  margin-left: -580px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Distribute the copyright and links */
+  width: 100%;                   /* Ensure full width */
+  max-width: 1200px;             /* Optional: restrict to a maximum width */
+}
+
+.footer-left {
+  display: flex;
+  justify-content: flex-start;  /* Align copyright to the left */
+  margin-left: 70px;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end;    /* Align links to the right */
+  gap: 50px;                    /* Space between each link */
+}
+
+.footer-link {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-link:hover {
+  color: rgb(90, 170, 241);
+}

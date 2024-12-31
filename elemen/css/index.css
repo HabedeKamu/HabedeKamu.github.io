@@ -1,0 +1,169 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Body styling */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("../image/pnti.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/* Navbar styling */
+.navbar {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  max-width: 120px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: rgb(90, 170, 241);
+}
+
+/* User avatar styling */
+.user-avatar {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.logout-button img {
+  width: 25px; /* Atur lebar sesuai kebutuhan */
+  height: 25px; /* Atur tinggi sesuai kebutuhan */
+  object-fit: contain; /* Pastikan gambar tetap proporsional */
+  cursor: pointer; /* Tambahkan pointer untuk menampilkan ikon klik */
+  margin-left: 10px; /* Sesuaikan jarak antara tombol logout dengan elemen lain */
+}
+
+#logout {
+  padding: 20px;
+}
+
+/* Judul styling */
+.judul {
+  width: 90%;
+  max-width: 800px;
+  margin: 5px auto 50px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Search bar styling */
+.search-bar {
+  width: 90%;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.509);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -70px;
+}
+
+.search-text {
+  flex: 1;
+  line-height: 20px;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: rgb(3, 80, 148);
+  padding-left: 15px;
+}
+
+.material-symbols-outlined {
+  margin-left: 290px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Responsive design using media queries */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .judul {
+    margin: 80px auto 20px;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 80px;
+  }
+
+  .search-text {
+    font-size: 16px;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+}
